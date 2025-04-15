@@ -1,0 +1,202 @@
+/*
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-image: url("/static/logorazcortolyd.png");
+    background-size: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+
+}
+
+.content{
+    flex-direction: row;
+}
+
+
+
+input, button { 
+    padding: 8px; 
+    margin: 8px 0; 
+    width: 100%;
+}
+pre {
+    background: #efeeee; 
+    padding: 10px; 
+}
+
+
+
+*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-image: url("/static/logorazcortolyd.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 60%;
+    background-attachment: fixed;
+
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2{
+    font-family: "Poppins";
+    font-weight: 900;
+    letter-spacing: 2px;
+    font-size: 25px;
+    color: #0F5591;
+    text-shadow: #1b1f4de4 3px 1px;
+
+}
+
+
+/* Botón modo oscuro */
+.dark-toggle {
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    z-index: 999;
+    padding: 8px 12px;
+    font-size: 18px;
+    border: none;
+    background-color: #222;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.dark-toggle:hover {
+    opacity: 1;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    max-width: 500px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Campos */
+input, button {
+    padding: 10px;
+    margin: 8px 0;
+    width: 100%;
+    font-size: 16px;
+    box-sizing: border-box;
+    font-family: "Poppins";
+}
+
+button {
+    background-color:  #0F5591;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #00AAD2;
+}
+
+pre {
+    background: #fff;
+    border: solid 1px ;
+    padding: 10px;
+    border-radius: 5px;
+    overflow-x: auto;
+    font-family: "Poppins";
+    font-size: 14px;
+}
+
+/* Modo oscuro */
+body.dark-mode {
+    background-color: #302f2f;
+    color: #f0f0f0;
+
+}
+
+body.dark-mode .content {
+    background-color: rgba(30, 30, 30, 0.5);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode input,
+body.dark-mode button,
+body.dark-mode pre {
+    background-color: #1e1e1e;
+    color: white;
+    border: 1px solid #444;
+}
+
+
+.dark-toggle {
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    z-index: 999;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    font-size: 20px;
+    border: none;
+    background-color: #222;
+    color: white;
+    border-radius: 50%; /* Redondo */
+    cursor: pointer;
+    opacity: 0.8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+}
+
+.dark-toggle:hover {
+    opacity: 1;
+}
+
+
+.footer {
+    text-align: center;
+    font-size: 10px;
+    color: #555;
+    padding: 8px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(5px);
+    font-family: "Poppins";
+}
+
+body.dark-mode .footer {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #ccc;
+}

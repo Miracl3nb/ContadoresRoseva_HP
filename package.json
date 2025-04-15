@@ -1,0 +1,16 @@
+{
+  "name": "contadoressimple",
+  "version": "1.0.0",
+  "description": "Aplicación local para consultar contadores de impresoras HP por IP",
+  "main": "core.js",
+  "scripts": {
+    "start": "node core.js"
+  },
+  "keywords": ["impresoras", "hp", "contadores", "scraping", "red"],
+  "author": "Nahuel Brunel",
+  "license": "MIT",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.12",
+    "express": "^5.1.0"
+  }
+}
