@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  contadores-hp:
+    build: .
+    container_name: contadores-hp
+    ports:
+      - "3000:3000"
+    restart: always
+
+

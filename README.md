@@ -3,6 +3,8 @@
 
 Una aplicación web local para consultar el número de serie e impresiones equivalentes (A4/carta) de impresoras HP a través de web scraping.
 
+Impresoras compatibles: 4015, 4250, M601, M602, M603 .. M605 
+
 ---
 
 ## 📦 Requisitos
